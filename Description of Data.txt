@@ -1,0 +1,17 @@
+Hi Seth,
+
+Here's some data to get you started, it's a grid cell and a border cell, the ones prominently displayed on the poster for reference. The trlmat has the trl sample indices from the beginning of the session. All of the image viewings were selected and concatenated to get the x, y, and spiking data. 
+
+These 2 cells were recorded simultaneously and the trial matrix contains in each row:
+[start_sample end_sample offset_of_start_within_image condition block_number trial_type image_group]
+
+Each scene (novel or repeat) was shown twice for 10 seconds, 
+The images are in:
+S:/Nathan/Set007.zip
+
+Trial type 1 is the novel image, 2 is exact repeat, 3 is moved (suffix 'm'), 4 is object changed (suffix 'o')
+
+Anytime the monkey looked outside of the image bounds, I removed those segments, this is why some images have multiple sub-trials. All samples in the trial matrix should correspond to samples in the data.mat -samples are at 1 msec intervals.
+
+Just let me know if you need anything else.
+-N
